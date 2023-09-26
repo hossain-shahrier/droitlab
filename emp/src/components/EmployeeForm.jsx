@@ -27,7 +27,6 @@ const EmployeeForm = () => {
                 phone,
             };
 
-            // Call the addEmployee function to send the employee data
             const response = await addEmployee(newEmployee);
 
             if (response.data.status === 201) {
