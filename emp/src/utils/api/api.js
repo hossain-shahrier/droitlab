@@ -1,4 +1,3 @@
-// utils/api.js
 
 import axios from 'axios';
 
@@ -18,8 +17,20 @@ export const addEmployee = async (employeeData) => {
     // eslint-disable-next-line no-useless-catch
     try {
         const response = await axios.post('http://127.0.0.1:8000/api/employee', employeeData);
-        return response; 
+        return response;
     } catch (error) {
         throw error;
     }
 };
+
+
+export const fetchEmployee = async (employeeId) => {
+    try {
+        const response = await axios.get(`${API_BASE_URL}/employee/${employeeId}`);
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching employee:', error);
+        throw error;
+    }
+};
+
