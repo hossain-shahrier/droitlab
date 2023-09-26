@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "position": "Software Engineer",
+      "email": "john.doe@example.com",
+      "phone": "555-555-5555"
+    },
+    {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "position": "Product Manager",
+      "email": "jane.smith@example.com",
+      "phone": "555-555-5555"
+    },
+    {
+      "id": 3,
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "position": "Designer",
+      "email": "bob.johnson@example.com",
+      "phone": "555-555-5555"
+    }
+  ]
+}
